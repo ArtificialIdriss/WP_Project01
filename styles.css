@@ -23,19 +23,23 @@ body {
    text-align: center;
 }
 
-button {
+/* General button style */
+.button, button {
    background-color: #61dafb;
    border: none;
    border-radius: 5px;
    color: black;
    padding: 15px 30px;
    font-size: 1.2em;
-   margin: 10px 0; /* Adjusted margin for vertical spacing */
+   margin: 10px 0;
    cursor: pointer;
    transition: background-color 0.3s;
-   width: 100%; /* Make buttons full width */
+   width: 100%;
+   text-align: center;
+   text-decoration: none; /* Remove underline from links */
 }
 
-button:hover {
+.button:hover, button:hover {
    background-color: #21a1f1;
 }
+

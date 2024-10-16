@@ -1,49 +1,87 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 body {
-   background-color: #282c34;
+   background-image: url('stars.gif');
+   background-size: cover;
+   background-position: center;
    color: white;
-   font-family: Arial, sans-serif;
+   font-family: 'Arial', sans-serif;
    display: flex;
    justify-content: center;
    align-items: center;
    height: 100vh;
    margin: 0;
+   overflow: hidden;
 }
 
 .container {
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-direction: column;
 }
 
 .box {
-   background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-   padding: 30px;
-   border-radius: 10px;
-   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+   background-color: rgba(0, 0, 0, 0.7); 
+   padding: 50px;
+   border-radius: 15px;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
    text-align: center;
+   backdrop-filter: blur(5px);
+   border: 2px solid #61dafb; 
 }
 
-/* General button style */
+h1 {
+   font-size: 3em;
+   margin-bottom: 20px;
+   letter-spacing: 2px;
+   color: #ffcb05; 
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+/* Button styles */
 .button, button {
    background-color: #61dafb;
    border: none;
-   border-radius: 5px;
+   border-radius: 10px;
    color: black;
-   padding: 15px 30px;
-   font-size: 1.2em;
-   margin: 10px 0;
+   padding: 20px 40px;
+   font-size: 1.5em;
+   margin: 20px 0;
    cursor: pointer;
-   transition: background-color 0.3s;
+   transition: background-color 0.3s, transform 0.3s;
    width: 100%;
    text-align: center;
-   text-decoration: none; /* Remove underline from links */
+   text-decoration: none;
+   font-weight: bold;
 }
 
 .button:hover, button:hover {
    background-color: #21a1f1;
-<<<<<<< HEAD
+   transform: scale(1.05);
 }
 
-=======
+.button:active, button:active {
+   background-color: #1b8bcc;
+   transform: scale(1.02);
 }
->>>>>>> f98d347bd9999a10eb01184834893a95c7cfbd1b
+
+/* Animation for the button */
+@keyframes button-pulse {
+   0% { transform: scale(1); }
+   50% { transform: scale(1.05); }
+   100% { transform: scale(1); }
+}
+
+.button {
+   animation: button-pulse 2s infinite ease-in-out;
+}
+
+::selection {
+   background-color: #61dafb;
+   color: #000;
+}

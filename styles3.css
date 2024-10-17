@@ -1,0 +1,25 @@
+.intro-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.intro-container h1, .intro-container h2 {
+    color: #61dafb;
+    margin-bottom: 20px;
+}
+
+.intro-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.intro-container ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
